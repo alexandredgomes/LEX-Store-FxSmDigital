@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+    <head>
+        <title>LEX-Store Fixe Suma Digital</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="./src/css/reset.css" rel="stylesheet">
+        <link href="./src/css/style.css" rel="stylesheet">
+        <link href="./src/css/responsivo.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <!--- Header -->
+        <header>
+            <div class="logo">Fixe Suma Digital</div>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Produtos</li>
+                    <li>Contato</li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--- Main -->
+        <main class="container">
+                <div class="hero-circulo">
+                    <div class="circulo"></div>
+                    <div class="circulo"></div>
+                    <div class="circulo"></div>
+                </div>
+
+                <div class="lista">
+                    <div class="item ativo">
+                        <div class="produto-img">
+                            <img src="src/img/apple-watch.png" alt="Apple-Watch">
+                        </div>
+                        <div class="conteudo">
+                            <p class="produto-tag">O Novo Lançamento</p>
+                            <p class="produto-nome">Apple Watch Series 10</p>
+                            <p class="descricao">O Apple Watch é um smartwatch desenvolvido pela Apple, com recursos de monitoramento de saúde e fitness.</p>
+                            <button class="btn">Ver mais</button>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="produto-img">
+                            <img src="src/img/vision-pro.png" alt="Vision-Pro">
+                        </div>
+                        <div class="conteudo">
+                            <p class="produto-tag">Alta Performance</p>
+                            <p class="produto-nome">Vision Pro</p>
+                            <p class="descricao">O Vision Pro é um dispositivo inovador da Apple, projetado para oferecer uma experiência de realidade aumentada e virtual.</p>
+                            <button class="btn">Ver mais</button>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="produto-img">
+                            <img src="src/img/air-pods.png" alt="AirPods Pro">
+                        </div>
+                        <div class="conteudo">
+                            <p class="produto-tag">Som Imersivo</p>
+                            <p class="produto-nome">AirPods Pro</p>
+                            <p class="descricao">Os AirPods Pro oferecem um som de alta qualidade com cancelamento de ruído ativo.</p>
+                            <button class="btn">Ver mais</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="seta">
+                    <button id="prev">
+                        <img src="src/img/seta-prev.png" alt="seta-prev">
+                    </button>
+                    <button id="next">
+                        <img src="src/img/seta-next.png" alt="seta-next">
+                    </button>
+                </div>
+
+                <div class="indicadores">
+                    <div class="numeros">01</div>
+                    <div class="dots"></div>
+                    <div class="dot ativo"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+        </main>
+
+        <script src="./src/js/script.js"></script>
+    </body>
+</html>

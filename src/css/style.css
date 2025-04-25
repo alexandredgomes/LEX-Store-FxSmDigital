@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+/* CSS Estilos do projeto */
+
+body {
+  background-color: #050b25;
+  color: #fff;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #00f7ff;
+    text-shadow: 0 0 10px rgb(0, 247, 255, 0.5);
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+}
+
+nav ul li {
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    padding: 5px 0;
+}
+
+nav ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #06e9f1;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav ul li:hover::after {
+    transform: scaleX(1);
+}
+
+.container {
+    height: 100vh;
+    position: relative;
+    background-color: linear-gradient(135deg, #0f0f13 0%, #1f1f3a 100%);
+    overflow: hidden;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(2, 179, 185, 0.766) 0%, rgba(15, 15, 30, 0) 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(50px);
+    z-index: 1;
+    animation: pulse 3s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.5;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.9);
+    }
+}
+
+.lista {
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.item {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.ativo {
+    opacity: 1;
+}
+
+.produto-img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.produto-img img {
+    max-width: 80%;
+    max-height: 60%;
+    filter: drop-shadow(0 0 10px rgba(0, 247, 255, 0.4));
+}
+
+.produto-img img:hover {
+    transform: scale(1.03);
+    transition: transform 0.2s ease;
+}
+
+.conteudo {
+    width: 55%;
+    padding-right: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.produto-tag {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #00f7ff;
+}
